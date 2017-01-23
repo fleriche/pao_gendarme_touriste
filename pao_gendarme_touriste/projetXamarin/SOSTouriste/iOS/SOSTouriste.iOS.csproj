@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{D7804BD1-15C9-4BD6-89D0-A1CA4BA129B1}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SOSTouriste.iOS</RootNamespace>
+    <AssemblyName>SOSTouriste.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Plugin.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.2.6.0.12-beta\lib\Xamarin.iOS10\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.2.6.0.12-beta\lib\Xamarin.iOS10\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.166-pre4\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.166-pre4\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.166-pre4\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.166-pre4\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Calabash">
+      <HintPath>..\packages\Xamarin.TestCloud.Agent.0.20.3\lib\Xamarin.iOS10\Calabash.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps">
+      <HintPath>..\packages\Xamarin.Forms.Maps.2.3.3.166-pre4\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps.iOS">
+      <HintPath>..\packages\Xamarin.Forms.Maps.2.3.3.166-pre4\lib\Xamarin.iOS10\Xamarin.Forms.Maps.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOSTouriste\SOSTouriste.csproj">
+      <Project>{E4AA7467-4B79-4E86-8499-349CF6C5D191}</Project>
+      <Name>SOSTouriste</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\PhoneDialer.cs" />
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Services\BaseUrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\advice.png" />
+    <BundleResource Include="Resources\consulate.png" />
+    <BundleResource Include="Resources\contact.png" />
+    <BundleResource Include="Resources\emer.png" />
+    <BundleResource Include="Resources\emergency_small.png" />
+    <BundleResource Include="Resources\emergency.png" />
+    <BundleResource Include="Resources\error.png" />
+    <BundleResource Include="Resources\fireman.png" />
+    <BundleResource Include="Resources\ic_menu_add.png" />
+    <BundleResource Include="Resources\ic_mode_edit_black_24dp.png" />
+    <BundleResource Include="Resources\ic_mode_edit_white_24dp.png" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\left_arrow.png" />
+    <BundleResource Include="Resources\localisation.png" />
+    <BundleResource Include="Resources\poison.png" />
+    <BundleResource Include="Resources\police.png" />
+    <BundleResource Include="Resources\profile_picture.jpg" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\right_arrow.png" />
+    <BundleResource Include="Resources\samu.png" />
+    <BundleResource Include="Resources\zoom_in.png" />
+    <BundleResource Include="Resources\zoom_out.png" />
+    <BundleResource Include="Resources\image_advice_0.png" />
+    <BundleResource Include="Resources\image_advice_1.png" />
+    <BundleResource Include="Resources\image_advice_2.png" />
+    <BundleResource Include="Resources\image_advice_3.png" />
+    <BundleResource Include="Resources\image_advice_4.png" />
+    <BundleResource Include="Resources\image_advice_5.png" />
+    <BundleResource Include="Resources\assets\de\advices\advice_0_DE.html" />
+    <BundleResource Include="Resources\assets\de\advices\advice_1_DE.html" />
+    <BundleResource Include="Resources\assets\de\advices\advice_2_DE.html" />
+    <BundleResource Include="Resources\assets\de\advices\advice_3_DE.html" />
+    <BundleResource Include="Resources\assets\de\advices\advice_4_DE.html" />
+    <BundleResource Include="Resources\assets\de\advices\advice_5_DE.html" />
+    <BundleResource Include="Resources\assets\en\advices\advice_0_EN.html" />
+    <BundleResource Include="Resources\assets\en\advices\advice_1_EN.html" />
+    <BundleResource Include="Resources\assets\en\advices\advice_2_EN.html" />
+    <BundleResource Include="Resources\assets\en\advices\advice_3_EN.html" />
+    <BundleResource Include="Resources\assets\en\advices\advice_4_EN.html" />
+    <BundleResource Include="Resources\assets\en\advices\advice_5_EN.html" />
+    <BundleResource Include="Resources\assets\es\advices\advice_0_ES.html" />
+    <BundleResource Include="Resources\assets\es\advices\advice_1_ES.html" />
+    <BundleResource Include="Resources\assets\es\advices\advice_2_ES.html" />
+    <BundleResource Include="Resources\assets\es\advices\advice_3_ES.html" />
+    <BundleResource Include="Resources\assets\es\advices\advice_4_ES.html" />
+    <BundleResource Include="Resources\assets\es\advices\advice_5_ES.html" />
+    <BundleResource Include="Resources\assets\fr\advices\advice_0_FR.html" />
+    <BundleResource Include="Resources\assets\fr\advices\advice_1_FR.html" />
+    <BundleResource Include="Resources\assets\fr\advices\advice_2_FR.html" />
+    <BundleResource Include="Resources\assets\fr\advices\advice_3_FR.html" />
+    <BundleResource Include="Resources\assets\fr\advices\advice_4_FR.html" />
+    <BundleResource Include="Resources\assets\fr\advices\advice_5_FR.html" />
+    <BundleResource Include="Resources\assets\it\advices\advice_0_IT.html" />
+    <BundleResource Include="Resources\assets\it\advices\advice_1_IT.html" />
+    <BundleResource Include="Resources\assets\it\advices\advice_2_IT.html" />
+    <BundleResource Include="Resources\assets\it\advices\advice_3_IT.html" />
+    <BundleResource Include="Resources\assets\it\advices\advice_4_IT.html" />
+    <BundleResource Include="Resources\assets\it\advices\advice_5_IT.html" />
+    <BundleResource Include="Resources\assets\nl\advices\advice_0_NL.html" />
+    <BundleResource Include="Resources\assets\nl\advices\advice_1_NL.html" />
+    <BundleResource Include="Resources\assets\nl\advices\advice_2_NL.html" />
+    <BundleResource Include="Resources\assets\nl\advices\advice_3_NL.html" />
+    <BundleResource Include="Resources\assets\nl\advices\advice_4_NL.html" />
+    <BundleResource Include="Resources\assets\nl\advices\advice_5_NL.html" />
+    <BundleResource Include="Resources\assets\pl\advices\advice_0_PL.html" />
+    <BundleResource Include="Resources\assets\pl\advices\advice_1_PL.html" />
+    <BundleResource Include="Resources\assets\pl\advices\advice_2_PL.html" />
+    <BundleResource Include="Resources\assets\pl\advices\advice_3_PL.html" />
+    <BundleResource Include="Resources\assets\pl\advices\advice_4_PL.html" />
+    <BundleResource Include="Resources\assets\pl\advices\advice_5_PL.html" />
+    <BundleResource Include="Resources\assets\pt\advices\advice_0_PT.html" />
+    <BundleResource Include="Resources\assets\pt\advices\advice_1_PT.html" />
+    <BundleResource Include="Resources\assets\pt\advices\advice_2_PT.html" />
+    <BundleResource Include="Resources\assets\pt\advices\advice_3_PT.html" />
+    <BundleResource Include="Resources\assets\pt\advices\advice_4_PT.html" />
+    <BundleResource Include="Resources\assets\pt\advices\advice_5_PT.html" />
+    <BundleResource Include="Resources\ic_home.png" />
+    <BundleResource Include="Resources\assets\de\help.html" />
+    <BundleResource Include="Resources\assets\en\help.html" />
+    <BundleResource Include="Resources\assets\es\help.html" />
+    <BundleResource Include="Resources\assets\fr\help.html" />
+    <BundleResource Include="Resources\assets\it\help.html" />
+    <BundleResource Include="Resources\assets\nl\help.html" />
+    <BundleResource Include="Resources\assets\pl\help.html" />
+    <BundleResource Include="Resources\assets\pt\help.html" />
+    <BundleResource Include="Resources\emergency_home.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.3.166-pre4\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.166-pre4\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

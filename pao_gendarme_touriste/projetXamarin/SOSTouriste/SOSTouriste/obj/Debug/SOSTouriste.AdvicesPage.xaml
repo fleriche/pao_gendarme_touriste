@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="SOSTouriste.AdvicesPage"
+		xmlns:resx="clr-namespace:SOSTouriste"
+		Title="{x:Static resx:Resources.LanguageResources.title_activity_advice}">
+	<ContentPage.Content>
+		<ListView x:Name="advicesListView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ImageCell Text="{Binding mText}" TextColor="Black" ImageSource="{Binding mIcon}" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>

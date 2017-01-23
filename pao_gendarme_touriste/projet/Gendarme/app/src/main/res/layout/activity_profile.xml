@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <fr.touriste.gendarme.pao.gendarme.tools.CircularImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_picture"
+        app:civ_border="true"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="8dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="10"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImageView"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5dp"
+        android:text="@string/firstname"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="5dp"
+        android:text="@string/blood"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nameSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImageView"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameTextView"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionDone"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:textSize="17dp" />
+
+    </ViewSwitcher>
+
+    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/firstnameSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/firstname"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/firstnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstnameTextView"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/firstnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionDone"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:textSize="17dp" />
+
+    </ViewSwitcher>
+
+    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bloodSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/blood"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/bloodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/bloodType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" />
+
+    </ViewSwitcher>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remarks"
+        android:id="@+id/pathTV"
+        android:layout_below="@+id/bloodSwitcher"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/diseaseEditText"
+        android:hint="Pathologie"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/pathTV"
+        android:layout_below="@+id/bloodSwitcher"
+        android:visibility="invisible"
+        android:layout_marginRight="10dp" />
+
+    <ListView
+        android:id="@+id/diseaseLV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pathTV"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+    </ListView>
+
+</RelativeLayout>

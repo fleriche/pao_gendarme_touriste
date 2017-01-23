@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="SOSTouriste.ProfilePage"
+		xmlns:resx="clr-namespace:SOSTouriste"
+		Title="{x:Static resx:Resources.LanguageResources.title_activity_profile}">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<StackLayout Orientation="Horizontal">
+				<Label
+				Text="{x:Static resx:Resources.LanguageResources.name}" 
+				FontSize="20"
+				FontAttributes="Bold"/>	
+			
+				<Entry
+				Placeholder="Entrez votre prénom"
+				FontSize="20"
+				FontAttributes="Bold"
+				x:Name="entryName"
+				IsVisible="false"/>
+
+				<Label 
+				FontSize="20"
+				IsVisible="true"
+				x:Name="labelName"
+				FontAttributes="Bold"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label
+				Text="{x:Static resx:Resources.LanguageResources.firstname}" 
+				FontSize="20"
+				FontAttributes="Bold"/>	
+
+				<Entry
+				Placeholder="Entrez votre nom"
+				FontSize="20"
+				FontAttributes="Bold"
+				x:Name="entryFirstname"
+				IsVisible="false"/>
+
+				<Label
+				FontSize="20"
+				x:Name="labelFirstname"
+				FontAttributes="Bold"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label
+				Text="{x:Static resx:Resources.LanguageResources.blood}" 
+				FontSize="20"
+				FontAttributes="Bold"/>	
+
+				<Picker
+					Title = "Blood"
+					x:Name="pickerBlood"
+					IsVisible="false"
+					VerticalOptions="CenterAndExpand"/>
+				
+				<Label
+				FontSize="20"
+				x:Name="labelBloodtype"
+				FontAttributes="Bold"/>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+	<ContentPage.ToolbarItems>
+      <ToolbarItem Icon="ic_mode_edit_white_24dp" Clicked="ItemClicked"></ToolbarItem>
+</ContentPage.ToolbarItems>
+</ContentPage>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="language" xml:space="preserve">
+    	<value>Language</value>
+  	</data>
+	<data name="home" xml:space="preserve">
+    	<value>Home</value>
+  	</data>
+	<data name="menuTitle">
+		<value>SOS menu</value>
+	</data>
+	<data name="accueil">
+		<value>Home</value>
+	</data>
+	<data name="samu">
+		<value>Medical Service</value>
+	</data>
+	<data name="fireman">
+		<value>Firemen</value>
+	</data>
+	<data name="help">
+		<value>Help</value>
+	</data>
+	<data name="hospital">
+		<value>Hospital</value>
+	</data>
+	<data name="language">
+		<value>Language</value>
+	</data>
+	<data name="police">
+		<value>Police</value>
+	</data>
+	<data name="emergency">
+		<value>Emergency</value>
+	</data>
+	<data name="settings">
+		<value>Settings</value>
+	</data>
+	<data name="contact">
+		<value>Contacts</value>
+	</data>
+	<data name="localisation">
+		<value>Location</value>
+	</data>
+	<data name="advice">
+		<value>Advices</value>
+	</data>
+	<data name="profile">
+		<value>Profile</value>
+	</data>
+	<data name="callEmergency">
+		<value>Call Emergency</value>
+	</data>
+	<data name="title_activity_advice">
+		<value>Advices</value>
+	</data>
+	<data name="title_activity_emergency">
+		<value>Emergency</value>
+	</data>
+	<data name="title_activity_contact">
+		<value>Contact</value>
+	</data>
+	<data name="title_activity_profile">
+		<value>Profile</value>
+	</data>
+	<data name="title_activity_localisation">
+		<value>Location</value>
+	</data>
+	<data name="title_activity_language">
+		<value>Language</value>
+	</data>
+	<data name="title_activity_help">
+		<value>Help</value>
+	</data>
+	<data name="title_activity_language_first_time" translatable="false">
+		<value>LanguageFirstTime</value>
+	</data>
+	<data name="title_activity_test" translatable="false">
+		<value>TestActivity</value>
+	</data>
+	<data name="title_activity_list" translatable="false">
+		<value>ListActivity</value>
+	</data>
+	<data name="title_activity_reader" translatable="false">
+		<value>ReaderActivity</value>
+	</data>
+	<data name="action_settings" translatable="false">
+		<value>Settings</value>
+	</data>
+	<data name="navigation_drawer_open" translatable="false">
+		<value>Open navigation drawer</value>
+	</data>
+	<data name="navigation_drawer_close" translatable="false">
+		<value>Close navigation drawer</value>
+	</data>
+	<data name="nameTextView">
+		<value>Enter your name</value>
+	</data>
+	<data name="firstnameTextView">
+		<value>Enter your firstname</value>
+	</data>
+	<data name="locateConsulate">
+		<value>Consulate</value>
+	</data>
+	<data name="locatePolice">
+		<value>Police</value>
+	</data>
+	<data name="consulate">
+		<value>Consulate</value>
+	</data>
+	<data name="policeStation">
+		<value>Police station</value>
+	</data>
+	<data name="mapsInstallText">
+		<value>Please install a maps application</value>
+	</data>
+	<data name="problemFile">
+		<value>Problem with the file ! </value>
+	</data>
+	<data name="name">
+		<value>Name :</value>
+	</data>
+	<data name="firstname">
+		<value>Firstname :</value>
+	</data>
+	<data name="blood">
+		<value>Blood type :</value>
+	</data>
+	<data name="remarks">
+		<value>Medical remarks :</value>
+	</data>
+	<data name="adviceList">
+		<value>Advices list : </value>
+	</data>
+	<data name="firstTime">
+		<value>This is your first time on the application, please provide your nationality</value>
+	</data>
+	<data name="askLocationTitle">
+		<value>Information</value>
+	</data>
+	<data name="askLocationText">
+		<value>To fully enjoy the app, please enable geolocation.</value>
+	</data>
+	<data name="delete">
+		<value>Delete</value>
+	</data>
+	<data name="helpText">
+		<value>
+			<b>The different activities\n\n</b>
+			<ul>
+				<li>
+					<u>Call the emergency\n\n</u>
+				</li>
+                "The main achievement of this activity is to allow you to call the emergency. By"
+                "clicking on this button you will be redirected to your dialer with the emergency's"
+                "phone number. All you will have to do next is to press the button call.\n\n"
+            <li><u>Contacts\n\n</u></li>
+                "In this activity you will find different numbers of helpful services that you could"
+                "need if you are in a plight. For instance you will find the number of the police.\n\n"
+            <li><u>Location\n\n</u></li>
+                "In this activity you will find a list of different services you could need. By"
+                "clicking on one of them you will be redirected on Google Maps. Then you will just"
+                "have to choose your itinerary.\n\n"
+            <li><u>Profile\n\n</u></li>
+                "There you can create your profile by specifying your blood type, your medical"
+                "treatments or your pathologies. It could be helpful if you had an accident.\n\n"
+        </ul>
+		</value>
+	</data>
+	<data name="adviceLabel">
+		<value>General advices|Public transport|Hotel|Public places|Car park|Robbery</value>
+	</data>
+	<!--<data-array name="adviceLabel"><value>
+        <item>General advices</item>
+        <item>Public transport</item>
+        <item>Hotel</item>
+        <item>Public places</item>
+        <item>Car park</item>
+        <item>Robbery</item>
+    </data-array>-->
+	<!-- Laisser cette chaine en francais -->
+	<data name="queryConsulate">
+		<value>Consulat d\'Angleterre</value>
+	</data>
+	<!--> Ne pas traduire dans d'autres nationalité les éléments suivants -->
+	<!-- A l'ajout d'une nationalité, ajouter une ligne correspondant a la nationalité choisie
+        avec le format suivant
+        CODEISO:Nationalité (dans la langue de la nationalité)-->
+	<!--<data-array name="nationalityList"><value>
+        <item>fr:Français (France) </item>
+        <item>en:English (United Kingdom)</item>
+        <item>de:Deutsch (Deutschland)</item>
+        <item>es:Espagñol (España)</item>
+        <item>it:Italiano</item>
+        <item>pl:Polski</item>
+        <item>pt:Português (Portugal)</item>
+    </data-array>
+
+    <data-array name="bloodType"><value>
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </data-array>-->
+    <data name="english">
+		<value>English</value>
+	</data>
+	<data name="german">
+		<value>Deutsch</value>
+	</data>
+	<data name="spanish">
+		<value>Español</value>
+	</data>
+	<data name="french">
+		<value>Français</value>
+	</data>
+	<data name="italian">
+		<value>Italiano</value>
+	</data>
+	<data name="netherlands">
+		<value>Nederlands</value>
+	</data>
+	<data name="polish">
+		<value>Polski</value>
+	</data>
+	<data name="portuguese">
+		<value>Português</value>
+	</data>
+	
+	<data name="queryPolice" translatable="false">
+		<value>Gendarmerie, Police</value>
+	</data>
+	<data name="queryHospital" translatable="false">
+		<value>Hôpital</value>
+	</data>
+</root>

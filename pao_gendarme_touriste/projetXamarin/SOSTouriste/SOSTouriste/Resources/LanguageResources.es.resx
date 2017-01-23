@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="menuTitle">
+		<value>Menú sos</value>
+	</data>
+	<data name="title_activity_advice">
+		<value>Consejos</value>
+	</data>
+	<data name="title_activity_emergency">
+		<value>ER</value>
+	</data>
+	<data name="title_activity_contact">
+		<value>Contactos</value>
+	</data>
+	<data name="title_activity_profile">
+		<value>Perfil</value>
+	</data>
+	<data name="title_activity_localisation">
+		<value>Localización</value>
+	</data>
+	<data name="title_activity_language">
+		<value>Lengua</value>
+	</data>
+	<data name="title_activity_help">
+		<value>Asistencia</value>
+	</data>
+	<!-- Urgence -->
+	<data name="samu">
+		<value>Ambulancia</value>
+	</data>
+	<data name="hospital">
+		<value>Hopital</value>
+	</data>
+	<data name="fireman">
+		<value>Bomberos</value>
+	</data>
+	<data name="emergency">
+		<value>ER</value>
+	</data>
+	<data name="contact">
+		<value>Contactos</value>
+	</data>
+	<data name="localisation">
+		<value> Localización</value>
+	</data>
+	<data name="advice">
+		<value>Consejos</value>
+	</data>
+	<data name="profile">
+		<value>Perfil</value>
+	</data>
+	<data name="settings">
+		<value>Opciones</value>
+	</data>
+	<data name="help">
+		<value>Asistencia</value>
+	</data>
+	<data name="language">
+		<value>Lengua</value>
+	</data>
+	<data name="accueil">
+		<value>Accueil</value>
+	</data>
+	<data name="callEmergency">
+		<value>ER</value>
+	</data>
+	<data name="consulate">
+		<value>Consulado</value>
+	</data>
+	<data name="policeStation">
+		<value>Hotel de policía</value>
+	</data>
+	<data name="locatePolice">
+		<value>Policía</value>
+	</data>
+	<data name="locateConsulate">
+		<value>Consulado</value>
+	</data>
+	<data name="mapsInstallText">
+		<value>Por favor, instale una aplicación de Tarjetas</value>
+	</data>
+	<data name="problemFile">
+		<value>¡ Problema con fichero!</value>
+	</data>
+	<data name="police">
+		<value>Policía</value>
+	</data>
+	<data name="name">
+		<value>Apellido :</value>
+	</data>
+	<data name="firstname">
+		<value>Nombre :</value>
+	</data>
+	<data name="blood">
+		<value>Grupo sanguíneo :</value>
+	</data>
+	<data name="remarks">
+		<value>Observaciones médicas :</value>
+	</data>
+	<data name="nameTextView">
+		<value>Entrez votre nom</value>
+	</data>
+	<data name="firstnameTextView">
+		<value>Entre su nombre</value>
+	</data>
+	<data name="adviceList">
+		<value>Lista de consejos :</value>
+	</data>
+	<data name="frenchButton">
+		<value>Francés</value>
+	</data>
+	<data name="englishButton">
+		<value>Inglés</value>
+	</data>
+	<data name="germanButton">
+		<value>Alemán</value>
+	</data>
+	<data name="spanishButton">
+		<value>Español</value>
+	</data>
+	<data name="helpText">
+		<value>
+			<b>Las diferentes actividades \n\n</b>
+			<ul>
+				<li>
+					<u>Llamar al emergencia \n\n</u>
+				</li>
+                "Esta actividad está destinada a llamar a la sala de emergencias. Al pulsar este"
+                "botón, se le redirige a la aplicación de teléfono en el que sólo tiene que"
+                " confirmar el número marcado.\n\n"
+            <li><u>Contactos\n\n</u></li>
+                "Esta actividad incluye diferentes números de teléfono de otros servicios que "
+                "pueda necesitar, tales como bomberos, policía o el samu.\n\n"
+            <li><u>Localización\n\n</u></li>
+                "En esta actividad, haciendo clic en las diferentes líneas, se le redirige a "
+                "Google Maps con las diferentes propuestas.\n"
+                "Entonces, usted elige su camino con la ruta de su elección.\n\n"
+            <li><u>Perfil\n\n</u></li>
+                "Por último, puede darse cuenta de su perfil, añadir su grupo sanguíneo, el "
+                "tratamiento de diferentes patologías y la historia. Esto puede ser útil si usted "
+                "es víctima de un accidente.\n\n"
+        </ul>
+		</value>
+	</data>
+	<data name="adviceLabel">
+		<value>Consejos generales|Transporte público|Hotel|Lugares públicos|Aparcamiento|Víctima de un robo</value>
+	</data>
+	<data name="delete">
+		<value>Eliminar</value>
+	</data>
+	<data name="queryConsulate">
+		<value>Consulat d\'Espagne</value>
+	</data>
+	<data name="askLocationText">
+		<value>Para disfrutar plenamente de la aplicación, por favor, habilite geolocalización.</value>
+	</data>
+	<data name="askLocationTitle">
+		<value>Información </value>
+	</data>
+	<data name="firstTime">
+		<value>Esta es la primera vez en la solicitud, por favor proporcione su nacionalidad</value>
+	</data>
+</root>

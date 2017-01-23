@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="title">Mon Application</string>
+    <string name="menuTitle">Menu SOS</string>
+
+    <string name="title_activity_advice">Advies</string>
+    <string name="title_activity_emergency">Noodgevallen</string>
+    <string name="title_activity_contact">Contacten</string>
+    <string name="title_activity_profile">Profiel</string>
+    <string name="title_activity_localisation">Locatie</string>
+    <string name="title_activity_language">Taal</string>
+    <string name="title_activity_help">Helpen</string>
+
+
+    <!-- Urgence -->
+    <string name="samu">Ziekenwagen</string>
+    <string name="hospital">Ziekenhuis</string>
+    <string name="fireman">Brandweer</string>
+    <string name="emergency">Eerste hulp</string>
+
+    <string name="contact">Contacten</string>
+    <string name="localisation">Lokalisatie</string>
+    <string name="advice">Advies</string>
+    <string name="profile">Profiel</string>
+    <string name="settings">Opties</string>
+    <string name="help">Steun</string>
+    <string name="language">taal</string>
+    <string name="accueil">Ontvangst</string>
+    <string name="callEmergency">Noodgevallen</string>
+
+    <string name="consulate">Consulaat</string>
+    <string name="policeStation">Politie Hall</string>
+    <string name="locatePolice">Politie</string>
+    <string name="locateConsulate">Consulaat</string>
+    <string name="mapsInstallText"> Installeer een applicatie kaarten</string>
+    <string name="problemFile">Probleem met de file!</string>
+    <string name="police">Politie</string>
+
+    <string name="name">Naam :</string>
+    <string name="firstname">Voornaam :</string>
+    <string name="blood">Bloedgroep :</string>
+    <string name="remarks">Medische informatie :</string>
+
+    <string name="nameTextView">Voer uw naam in</string>
+    <string name="firstnameTextView">Voer uw voornaam</string>
+
+    <string name="adviceList">Lijst van de adviezen :</string>
+
+    <string name="frenchButton">Frans</string>
+    <string name="englishButton">Engelse</string>
+    <string name="germanButton">Duits</string>
+    <string name="spanishButton">Espagnol</string>
+
+
+    <string name="helpText">
+        <b>De verschillende activiteiten\n\n</b>
+        <ul>
+            <li> <u>Bel de hulpdiensten\n\n</u></li>
+                "Deze activiteit is gericht op de ER bellen. Door op deze knop drukt, wordt u "
+                "doorgestuurd naar de telefoon app waarbij je gewoon het nummer dat werd "
+                "gekozen bevestigen.\n\n"
+            <li> <u>Contacten\n\n</u></li>
+                "Deze activiteit omvat verschillende telefoonnummers voor andere diensten die u "
+                "nodig heeft, zoals brandweer, politie of de Samu\n\n"
+            <li> <u>Lokalisatie\n\n</u></li>
+                "In deze activiteit, door te klikken op de verschillende lijnen, wordt u "
+                "doorgestuurd naar Google Maps met de verschillende voorstellen. "
+                "Vervolgens kiest u uw pad met de route van uw keuze.\n\n"
+            <li> <u>Profiel\n\n</u></li>
+                "U kunt uw profiel eindelijk beseffen, voeg uw bloedgroep, de verschillende "
+                "pathologieën en behandeling geschiedenis. "
+                "Dit kan handig zijn als u het slachtoffer van een ongeval zijn.\n\n"
+        </ul>
+    </string>
+
+    <string name="delete">Verwijderen</string>
+    <string name="queryConsulate">Consulat des Pays-Bas</string>
+    <string name="askLocationText">Om optimaal te genieten van de app, schakelt u geolocatie.</string>
+    <string name="askLocationTitle">Informatie</string>
+
+    <string-array name="adviceLabel">
+        <item>Algemene tips</item>
+        <item>Openbaar vervoer</item>
+        <item>Hotel</item>
+        <item>Openbare plaatsen</item>
+        <item>Parkeren</item>
+        <item>Beroofd</item>
+    </string-array>
+
+    <string name="firstTime">Dit is de eerste keer over de aanvraag, geef dan uw nationaliteit</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				  xmlns:local="clr-namespace:SOSTouriste;assembly=SOSTouriste"
+				  xmlns:resx="clr-namespace:SOSTouriste"
+				  x:Class="SOSTouriste.MenuPage">
+  <MasterDetailPage.Master>
+  	<local:MasterPage x:Name="masterPage" />
+  </MasterDetailPage.Master>
+	<MasterDetailPage.Detail>
+		<NavigationPage
+				BarBackgroundColor="#28354F">
+			<NavigationPage.ToolbarItems>
+ 				<ToolbarItem Name="{x:Static resx:Resources.LanguageResources.help}" Clicked="onHelpClicked" Order="Secondary" Priority="0" />
+ 			</NavigationPage.ToolbarItems>
+			<x:Arguments>
+				<local:HomePage />
+			</x:Arguments>
+		</NavigationPage>
+	</MasterDetailPage.Detail>
+</MasterDetailPage>

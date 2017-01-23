@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="menuTitle">
+		<value>Menü SOS</value>
+	</data>
+	<data name="title_activity_advice">
+		<value>Beratung</value>
+	</data>
+	<data name="title_activity_emergency">
+		<value>Dringlichkeit</value>
+	</data>
+	<data name="title_activity_contact">
+		<value>Kontact</value>
+	</data>
+	<data name="title_activity_profile">
+		<value>Profil</value>
+	</data>
+	<data name="title_activity_localisation">
+		<value>Geolokalisierung</value>
+	</data>
+	<data name="title_activity_language">
+		<value>Sprache</value>
+	</data>
+	<data name="title_activity_help">
+		<value>Hilfe</value>
+	</data>
+	<!-- Urgence -->
+	<data name="samu">
+		<value>Samu</value>
+	</data>
+	<data name="hospital">
+		<value>Krankenhaus</value>
+	</data>
+	<data name="fireman">
+		<value>Feuerwehr</value>
+	</data>
+	<data name="emergency">
+		<value>Dringlichkeit</value>
+	</data>
+	<data name="contact">
+		<value>Kontact</value>
+	</data>
+	<data name="localisation">
+		<value>Geolokalisierung</value>
+	</data>
+	<data name="advice">
+		<value>Beratung</value>
+	</data>
+	<data name="profile">
+		<value>Profil</value>
+	</data>
+	<data name="settings">
+		<value>Options</value>
+	</data>
+	<data name="help">
+		<value>Hilfe</value>
+	</data>
+	<data name="language">
+		<value>Sprache</value>
+	</data>
+	<data name="accueil">
+		<value>Willkommen</value>
+	</data>
+	<data name="callEmergency">
+		<value>Dringlichkeit</value>
+	</data>
+	<data name="consulate">
+		<value>Konsulat</value>
+	</data>
+	<data name="policeStation">
+		<value>Polizeistation</value>
+	</data>
+	<data name="locatePolice">
+		<value>Polizei</value>
+	</data>
+	<data name="locateConsulate">
+		<value>Konsulat</value>
+	</data>
+	<data name="mapsInstallText">
+		<value>Bitte installieren Sie eine Geolokalisierungsanwendung</value>
+	</data>
+	<data name="problemFile">
+		<value>Problem mit der Datei!</value>
+	</data>
+	<data name="police">
+		<value>Polizei</value>
+	</data>
+	<data name="name">
+		<value>Name : </value>
+	</data>
+	<data name="firstname">
+		<value>Vorname : </value>
+	</data>
+	<data name="blood">
+		<value>Blutgruppe : </value>
+	</data>
+	<data name="remarks">
+		<value>Medizinische Bemerkungen :</value>
+	</data>
+	<data name="nameTextView">
+		<value>Bitte geben Sie Ihre Name ein</value>
+	</data>
+	<data name="firstnameTextView">
+		<value>Bitte geben Sie Ihre Vorname ein</value>
+	</data>
+	<data name="adviceList">
+		<value>Liste von Räten</value>
+	</data>
+	<data name="frenchButton">
+		<value>Französische</value>
+	</data>
+	<data name="englishButton">
+		<value>Englisch</value>
+	</data>
+	<data name="germanButton">
+		<value>Deutsch</value>
+	</data>
+	<data name="spanishButton">
+		<value>Spanisch</value>
+	</data>
+	<data name="helpText">
+		<value>
+			<b>Die verschiedenen Aktivitäten\n\n</b>
+			<ul>
+				<li>
+					<u>Die Dringlichkeiten rufen\n\n</u>
+				</li>
+                "Diese Tätigkeit hat zum Ziel, die Dringlichkeiten zu rufen. Auf diesen Knopf"
+                "drückend(unterstützend), werden Sie zu Ihrer Anwendung von Telefon wieder geleitet"
+                "sein, wo Sie nur die Nummer werden rechtswirksam zu machen haben, die"
+                "zusammengestellt gewesen ist.\n\n"
+            <li><u>Kontakt\n\n</u></li>
+                "Diese Tätigkeit vereint unterschiedliche Rufnummern der anderen Dienste, die Sie"
+                "brauchen könnten, so wie die Feuerwehrmänner, die Polizei(Police) oder noch der"
+                "samu.\n\n"
+            <li><u>Geolokalisierung\n\n</u></li>
+                "In dieser Tätigkeit, auf den unterschiedlichen Linien klickend, werden Sie auf"
+                "Google Maps mit den unterschiedlichen Vorschlägen wieder geleitet sein. Dann,"
+                "Ihnen, Ihren Weg mit der Reiseroute Ihrer Auswahl zu wählen.\n\n"
+            <li><u>Profil\n\n</u></li>
+                "Sie werden schliesslich Ihr Profil realisieren, Ihre Blutgruppe, die"
+                "unterschiedlichen Pathologien und die regelmäßigen Behandlungen hinzufügen können."
+                "Das wird nützlich sein können, wenn Sie ein Opfer eines Unfalles sind.\n\n"
+        </ul>
+		</value>
+	</data>
+	<data name="adviceLabel">
+		<value>Allgemeine Tipps|Öffentliche Verkehrsmittel|Hotel|Öffentlichen Plätzen|Parkplatz|Opfer eines Diebes</value>
+	</data>
+	<data name="delete">
+		<value>Löschen</value>
+	</data>
+	<data name="queryConsulate">
+		<value>Consulat d\'Allemagne</value>
+	</data>
+	<data name="askLocationText">
+		<value>Um voll und ganz die App genießen, aktivieren Sie bitte die Entfernung zu kennen.</value>
+	</data>
+	<data name="askLocationTitle">
+		<value>Informationen</value>
+	</data>
+	<data name="firstTime">
+		<value>Dies ist das erste Mal auf der Anwendung, geben Sie bitte Ihre Nationalität</value>
+	</data>
+</root>

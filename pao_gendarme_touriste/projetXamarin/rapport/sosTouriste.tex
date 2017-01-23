@@ -1,0 +1,112 @@
+\documentclass[12pt,twoside]{scrreprt}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage[francais]{babel, varioref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{calc}
+\usepackage{listingsutf8}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage[style=verbose-note,backend=bibtex]{biblatex}
+\usepackage{url}
+\usepackage[top=2.1cm,bottom=2.2cm,left=2cm,right=2cm]{geometry}
+\usepackage[final]{pdfpages}
+\usepackage{verbatim}
+\usepackage{rotating, graphicx}
+\usepackage{listings}
+
+%Pour afficher le code c#	
+\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
+
+% Pour sommaire cliquable 
+\usepackage{hyperref} % Créer des liens et des signets
+\hypersetup{
+colorlinks=true, %colorise les liens
+breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+urlcolor= blue, %couleur des hyperliens
+linkcolor= black, %couleur des liens internes
+citecolor=black,  %couleur des références
+}
+
+% Fichier de bibliographie
+\bibliography{parties/biblio}
+
+\usepackage{templateINSA}
+\initINSA
+
+% Tirte centre
+\renewcommand\infoBig{PAO}
+\renewcommand\infoSmall{Projet d'Approfondissement et d'Ouverture}
+
+% Titre bas 
+\title{Application d'aide pour les touristes étrangers}
+\renewcommand\soustitre{}
+
+% Auteurs
+\author{ 
+	\textbf{Étudiant:} Florian \bsc{Leriche} \\
+	\textbf{Année:} 2016-2017\\
+	\textbf{Lieu:} Rouen, France\\
+	}
+
+\begin{document}
+
+% titleINSA : Page de garde 
+% #1 : descendre le titre du milieu (en mm)
+% #2 : lien de l'image de fond
+% #3 : décalage sur X de l'image de fond (en mm)
+% #4 : décalage sur Y de l'image de fond (en mm)
+% #5 : largeur de l'image de fond de #5 (en mm)
+% #6 : Crédit de l'image de fond
+ \titleINSA{0}{img/eiffel.jpg}{0}{130}{220}{}
+ 
+
+%Introduction
+%\input{parties/00-Introduction.tex}
+%\addcontentsline{toc}{chapter}{Introduction}
+
+% Sommaire
+\tableofcontents
+
+% Parties
+\chapter{Introduction}
+\input{includes/introduction.tex}
+
+\chapter{Spécifications}
+\input{includes/specifications.tex}
+
+\chapter{Conception}
+\input{includes/conception.tex}
+
+\chapter{Conclusion et perspectives}
+\input{includes/conclusion.tex}
+
+% Bibliographie
+%\bibliographystyle{plain}
+\printbibliography
+
+% Annexes
+%\clearpage
+%\appendix
+%\chapter{Annexes}
+%\input{parties/10-Annexe.tex}
+
+
+% pageQuatriemeCouverture 
+% #1 : Direction
+% #2 : telephone
+% #3 : e-mail
+% #4 : Resume Haut
+% #5 : Resume Bas
+\pageQuatriemeCouverture{Département ASI}{02 32 95 97 79}{asi@insa-rouen.fr}{}{}
+
+\end{document}

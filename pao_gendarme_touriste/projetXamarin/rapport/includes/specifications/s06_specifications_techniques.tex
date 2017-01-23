@@ -1,0 +1,27 @@
+\subsection{Spécifications opérationnelles}
+
+\subsubsection{Caractéristiques techniques}
+	L'application sera fonctionnelle sous les systèmes d'exploitation mobile Android en version 4.0 minimum et IOS en version ?. Celle-ci devra être fluide et adaptée à une utilisation tactile. Elle sera proposée à des  utilisateurs ayant des nationalités différentes c'est pourquoi elle devra être lisible et graphique.
+	Cette application sera off-line c'est-à-dire sans échange de données direct. Dans le but d'utiliser le module de géolocalisation elle devra faire appel à une application tierce, Google Maps. En outre, elle sera responsive et donc en mesure de s'adapter à différents écrans.
+
+\subsubsection{Permissions}
+
+	L'application nécessitera plusieurs permissions dans l'optique que l'utilisateur puisse profiter pleinement de toutes ses fonctionnalités. Les permissions requises sont les suivantes : 
+	\begin{itemize}
+		\item \texttt{android.permission.CALL\_PHONE} Autorise l'application à rediriger l'utilisateur sur le composeur téléphonique en lui laissant le choix de confirmer ou non l'appel.
+		\item \texttt{android.permission.READ\_EXTERNAL\_STORAGE} Autorise l'application à lire du contenu externe stocké sur le téléphone.
+		\item \texttt{android.permission.ACCESS\_COARSE\_LOCATION} Autorise l'application à utiliser les fonctions de géolocalisation approximative.
+		\item \texttt{android.permission.ACCESS\_FINE\_LOCATION} Autorise l'application à utiliser les fonctions de géolocalisation de haute précision.
+	\end{itemize}
+	
+\subsection{Outils technologiques}
+
+	\paragraph{}
+		Comme nous l'avons expliqué ci-dessus l'application devra être en mesure de fonctionner sous Android et IOS. Cette dernière a déjà été développé en natif sous Android Studio pour le système d'exploitation Android. N'ayant aucune nouvelle de notre client, le choix qui a été fait était de concevoir différente version de l'application afin de pouvoir laisser le client choisir celle qui lui convenait le mieux. Ainsi, nous avons décidé de nous séparer en deux équipes, l'une travaillant sur le développement natif de l'application IOS et l'autre travaillant sur la réalisation d'une application multi plate-forme.
+		
+	\paragraph{}
+		La première équipe composée de Darchen Gautier et Judic Romain a développé une application IOS native à l'aide du langage de programmation Swift et de l'environnement de développement xCode sous macOS. Plus d'informations sur cette partie du projet seront disponibles dans le rapport associé.
+		
+	\paragraph{}
+		En ce qui me concerne, j'ai travaillé sur la réalisation de l'application multi plate-forme. Afin de procéder à cela je me suis tourner vers le développement d'une application hybride, connue pour être bien plus efficace et moins coûteuse en ressource que les applications web cross-platform. Cette application a été réalisée à l'aide du framework \emph{Xamarin} et du langage de programmation \emph{C\#}. Xamarin est disponible gratuitement sous Windows en installant un plugin pour Microsoft Visual Studio ou alors sous MacOS via Xamarin Studio. Ici, l'application a été développée à l'aide de Xamarin Studio. 	 
+		   	

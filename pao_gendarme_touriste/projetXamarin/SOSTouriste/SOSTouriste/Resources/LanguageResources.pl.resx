@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="menuTitle">
+		<value>Menu SOS</value>
+	</data>
+	<data name="title_activity_advice">
+		<value>Rada</value>
+	</data>
+	<data name="title_activity_emergency">
+		<value>Nagły wypadek</value>
+	</data>
+	<data name="title_activity_contact">
+		<value>Styki</value>
+	</data>
+	<data name="title_activity_profile">
+		<value>Profil</value>
+	</data>
+	<data name="title_activity_localisation">
+		<value>Lokalizacja</value>
+	</data>
+	<data name="title_activity_language">
+		<value>Język</value>
+	</data>
+	<data name="title_activity_help">
+		<value>Pomoc</value>
+	</data>
+	<!-- Urgence -->
+	<data name="samu">
+		<value>Ambulans</value>
+	</data>
+	<data name="hospital">
+		<value>Szpital</value>
+	</data>
+	<data name="fireman">
+		<value>Strażacy</value>
+	</data>
+	<data name="emergency">
+		<value>ER</value>
+	</data>
+	<data name="contact">
+		<value>Styki</value>
+	</data>
+	<data name="localisation">
+		<value>Lokalizacja</value>
+	</data>
+	<data name="advice">
+		<value>Rada</value>
+	</data>
+	<data name="profile">
+		<value>Profil</value>
+	</data>
+	<data name="settings">
+		<value>Opcje</value>
+	</data>
+	<data name="help">
+		<value>Pomoc</value>
+	</data>
+	<data name="language">
+		<value>Język</value>
+	</data>
+	<data name="accueil">
+		<value>Powitanie</value>
+	</data>
+	<data name="callEmergency">
+		<value>ER</value>
+	</data>
+	<data name="consulate">
+		<value>Konsulat</value>
+	</data>
+	<data name="policeStation">
+		<value>Policja Hall</value>
+	</data>
+	<data name="locatePolice">
+		<value>Policja</value>
+	</data>
+	<data name="locateConsulate">
+		<value>Konsulat</value>
+	</data>
+	<data name="mapsInstallText">
+		<value>Proszę zainstalować karty aplikacji</value>
+	</data>
+	<data name="problemFile">
+		<value>Problem z plikiem!</value>
+	</data>
+	<data name="police">
+		<value>Policja</value>
+	</data>
+	<data name="name">
+		<value>Nazwisko :</value>
+	</data>
+	<data name="firstname">
+		<value>Imię :</value>
+	</data>
+	<data name="blood">
+		<value>Grupa krwi :</value>
+	</data>
+	<data name="remarks">
+		<value>Dokumentacji medycznej :</value>
+	</data>
+	<data name="nameTextView">
+		<value>Wpisz swoje imię i nazwisko</value>
+	</data>
+	<data name="firstnameTextView">
+		<value>Podaj swoje imię i nazwisko</value>
+	</data>
+	<data name="adviceList">
+		<value>Lista Counsel :</value>
+	</data>
+	<data name="frenchButton">
+		<value>Francuski</value>
+	</data>
+	<data name="englishButton">
+		<value>Angielski</value>
+	</data>
+	<data name="germanButton">
+		<value>Niemiecki</value>
+	</data>
+	<data name="spanishButton">
+		<value>Hiszpański</value>
+	</data>
+	<data name="helpText">
+		<value>
+			<b>Różnorodne działania\n\n</b>
+			<ul>
+				<li>
+					<u>Zadzwoń do awaryjnego\n\n</u>
+				</li>
+                "To działanie ma na celu wywołać ER. Poprzez naciśnięcie tego przycisku, nastąpi "
+                "przekierowanie do aplikacji telefonu, gdzie po prostu trzeba potwierdzić numer, "
+                "który został wybrany.\n\n"
+            <li><u>Styki\n\n</u></li>
+                "Działalność ta obejmuje różne numery telefonów dla innych usług mogą być "
+                "potrzebne, takie jak pożarna, policja czy Samu.\n\n"
+            <li><u>Lokalizacja\n\n</u></li>
+                "W tej działalności, klikając na różnych liniach, użytkownik zostanie "
+                "przekierowany do Google Maps z różnymi propozycjami."
+                "Następnie należy wybrać swoją ścieżkę z trasy do wyboru.\n\n"
+            <li><u>Profil\n\n</u></li>
+                "Można wreszcie zrealizować swój profil, dodawać swoją grupę krwi, historii "
+                "różnych patologii i leczenia. "
+                "Może to być przydatne, jeśli jesteś ofiarą wypadku.\n\n"
+        </ul>
+		</value>
+	</data>
+	<data name="adviceLabel">
+		<value>Porady ogólne|Transportu publicznego|Hotel|Miejsca publiczne|Parking|Pozbawieni</value>
+	</data>
+	<data name="delete">
+		<value>Usunąć</value>
+	</data>
+	<data name="queryConsulate">
+		<value>Consulat de Pologne</value>
+	</data>
+	<data name="askLocationText">
+		<value>Aby w pełni korzystać z aplikacji, należy włączyć geolokalizacji.</value>
+	</data>
+	<data name="askLocationTitle">
+		<value>Informacji</value>
+	</data>
+	<data name="firstTime">
+		<value> To jest twój pierwszy raz od zastosowania, prosimy o przedstawienie swojej narodowości</value>
+	</data>
+</root>

@@ -1,0 +1,170 @@
+\subsection{Package SOSTouriste}
+	\subsubsection{SOSTouristePage}
+	\subsubsection{HomePage}
+	\paragraph{}
+		Cette page représente l'accueil de l'application. Celle-ci permet à l'utilisateur d'accéder aux différentes fonctionnalités à savoir la localisation de services, la liste de contacts, la liste des conseils, le profil et le choix de la langue. Un raccourci permettant d'appeler les urgences (112) à aussi été placé directement sur l'accueil.
+	
+	\paragraph{}
+	On commence par initialiser la barre de navigation générale de l'application qui sera ensuite disponible à partir de n'importe quelle page. On construit les différents boutons qui seront présents dans cette dernière à savoir celui permettant d'afficher l'aide ainsi que celui permettant d'ouvrir le menu drawer.
+	
+	\paragraph{}
+	Si la géolocalisation n'est pas activée l'application demande à l'utilisateur de l'activer dans le but d'accéder à l'application et de profiter pleinement de toutes les fonctionnalités disponibles. Ainsi le touriste est automatiquement redirigé dans les options et celui-ci aura le choix d'activer ou non la géolocalisation.
+	\subsubsection{ContactsPage}
+	\paragraph{}
+		Cette page permet d'afficher une liste contenant l'ensemble des contacts et services pouvant être utile à l'utilisateur. Il s'agit principalement de numéros d'urgence comme les pompiers ou la gendarmerie.
+	
+	\paragraph{}
+		Au sein de cette page on créé un bouton pour chacun des contacts qui sera présent. Ensuite, on leur associe un listener qui permet de rediriger l'utilisateur sur son composeur téléphonique avec le numéro adéquat pré-écrit. Celui-ci aura toujours le choix de confirmer ou non l'appel téléphonique.
+	
+	\paragraph{}
+		Concernant Android, dans le but de faire appel au composeur téléphonique, cette activité nécessite la permission \emph{android.permission.CALL\_PHONE}. 
+	
+	\paragraph{}
+		Cette activité est directement accessible depuis la page d'accueil de l'application.
+	\subsubsection{Contact}
+		\paragraph{}
+			Cette classe est une entité représentant un contact et possède simplement trois attributs qui sont les suivants :
+			\begin{itemize}
+				\item mText Nom du contact.
+				\item mIcon Nom de l'icône du contact.
+				\item mNumber Numéro de téléphone du contact.
+			\end{itemize}
+	\subsubsection{LocationPage}
+	\paragraph{}
+		Cette page permet d'afficher une liste de services à l'utilisateur et de rediriger ce dernier sur l'application GoogleMaps dans l'optique de localiser le service et de proposer un itinéraire vers ce dernier. Si l'utilisateur ne possède pas l'application GoogleMaps alors il sera redirigé sur google maps dans son navigateur internet par défaut.
+	
+	\paragraph{}
+		Le traitement du clic est le même pour chaque option. La seule chose qui va changer dans la redirection est la requête vers GoogleMaps. Si la personne clique sur hôpital alors on choisi cette option là. Voici un exemple de requête : "\texttt{geo:0,0?q=Hôpital}"
+	
+	\paragraph{}
+		Cette page est directement accessible depuis la page d'accueil de l'application.
+	\subsubsection{Location}
+		\paragraph{}
+			Cette classe est une entité représentant un lieu et possède simplement trois attributs qui sont les suivants :
+			\begin{itemize}
+				\item mText Label du lieu.
+				\item mIcon Nom de l'icône du lieu.
+				\item mAddressUri URI google maps du lieu.
+			\end{itemize}
+	\subsubsection{LanguagePage}
+	\paragraph{}
+		Cette page permet d'afficher une liste de nationalités permettant à l'utilisateur de changer la langue de l'application.
+	
+	\paragraph{}
+		Pour chacune des langues il faut créer un fichier LanguageResources.X.cs où X représente le code iso de la langue souhaitée. Ces fichiers sont placés dans le package SOSTouriste.Resources. Ensuite il faut placer le nom de la langue (purement décoratif) qui apparaîtra dans la liste via le code suivant :
+		\lstset{style=sharpc}
+		\begin{lstlisting}
+			<data name="NOM">
+				<value>VALEUR</value>
+			</data>
+		\end{lstlisting}
+		Il faut copier coller ce code dans tous les fichiers de ressources de chaque langue avec NOM étant une constante commune à tous les fichiers et VALEUR représentant le label de langue à traduire dans chacun des fichiers de ressources. Enfin, il suffit de modifier le ficher \emph{LanguagePage.xaml.cs} afin d'y ajouter le code suivant : 
+		\lstset{style=sharpc}
+		\begin{lstlisting}
+			languages.Add(new Language
+			{
+				mLanguage = LanguageResources.NOM,
+				mLangIso = "CODE"
+			});
+		\end{lstlisting}
+		
+		Ici, NOM désigne la constante choisie plus haut et CODE désigne le code iso de la langue.
+	
+	\paragraph{}
+	Cette page est accessible depuis le menu \texttt{drawer} (menu déployé en glissant depuis la gauche de l'écran) de l'application.
+
+	\subsubsection{Language}
+		\paragraph{}
+			Cette classe est une entité représentant une langue et possède simplement deux attributs qui sont les suivants :
+			\begin{itemize}
+				\item mLanguage Label de la langue apparaissant dans la liste.
+				\item mLangIso Code ISO de la langue.
+			\end{itemize}
+	\subsubsection{AdvicesPage}
+	\paragraph{}
+		Cette page permet d'afficher une liste de conseils proposés à l'utilisateur. Elle regroupe un ensemble de conduite à tenir en fonction de différentes situations dans lesquelles un touriste étranger pourrait se trouver.
+		
+	\paragraph{}		
+		La liste des conseils présentée dans cette page est construite de manière dynamique. Le label de chacun des items de la liste doit être consigné dans les différents fichiers de ressources \emph{LanguageResources.X.cs}. Pour cela, il suffit de chercher \emph{adviceLabel} puis de rajouter le label à la suite de la chaîne précédée d'un "|". Ensuite, il suffit de rajouter une image nommée \emph{image\_advice\_X.png} où X représente le numéro du conseil ajouté (par exemple, s'il y en a déjà 4 alors X vaudra 5). Enfin, il faut ajouter le fichier html correspond au contenu du conseil avec le nom \emph{advice\_X\_Y.html";} où X représente le même numéro que précédemment et Y le code iso de la langue (par exemple advice\_5\_FR.html).
+	
+
+	\paragraph{}
+		La liste est ensuite afficher à l'utilisateur qui n'aura plus qu'à cliquer sur l'item de son choix pour afficher le descriptif du conseil. Pour cela un \emph{listener} est mis en place dans le but de d'appeler la page \emph{AdviceWebView} qui sera en charge de d'afficher le contenu du fichier html correspondant au conseil.
+
+	\paragraph{}
+		Cette page est directement accessible depuis la page d'accueil de l'application.
+		
+	\subsubsection{AdviceWebView}
+		\paragraph{}
+			Il s'agit d'un page contenant une webview dont dont l'objectif est d'afficher le contenu des fichiers html liés aux conseils. Ici, on récupère simplement la langue utilisée dans l'application ainsi que le fichier html correspondant puis on affiche son contenu à l'aide de la webview.
+		
+		\paragraph{}
+			Cette page est accessible depuis la liste des conseils en cliquant sur l'un des conseils de la liste.
+	\subsubsection{Advice}
+		\paragraph{}
+			Cette classe est une entité représentant un conseil et possède simplement trois attributs qui sont les suivants :
+			\begin{itemize}
+				\item mText Label du conseil.
+				\item mIcon Nom de l'icône du conseil.
+				\item mNumber Numéro du conseil.
+			\end{itemize}
+	\subsubsection{ProfilePage}	
+	\paragraph{}
+		Cette page permet d'accéder au profil de l'utilisateur. Celui-ci pourra renseigner ses informations personnelles. On commence par mettre en place les champs texte permettant à l'utilisateur de saisir son nom, son prénom ainsi que son groupe sanguin. On adjoint à ces derniers des valeurs par défaut en fonction de la langue choisie.
+	
+	\paragraph{}
+		Dans le but de modifier les informations présentes sur le profil, un bouton \emph{Modification} à été implémenter et à été placé dans la barre de navigation située en haut de l'activité.
+	
+	\paragraph{}	
+		Cette activité est directement accessible depuis la page d'accueil de l'application. Cependant, cette dernière n'est pas complètement terminée et nécessite certains rajout tels que le photo de profil ou encore le champs pour les remarques médicales.
+
+	\subsubsection{HelpPage}
+			\paragraph{}
+				Cette page a pour objectif de fournir une aide d’utilisation de l’application à l’utilisateur. Elle affiche simplement un descriptif permettant d’expliquer comment utiliser chacune des activités présentes au sein de l’application. Cette dernière est accessible depuis la barre de navigation générale de l’application.
+		
+\subsection{Package SOSTouriste.DrawerMenu}
+	\subsubsection{MasterPage}
+		\paragraph{}
+			Cette page permet de construire le menu drawer (menu déployé sur la gauche du téléphone) qui sera accessible partout dans l'application. La vue est composée de deux pages : une page \emph{master} et une page \emph{detail}. La page master représente le menu drawer composé d'une liste de champs. La page détail est chargée dynamiquement et peut être n'importe quelle autre page de l'application.
+	\subsubsection{MasterItem}
+		\paragraph{}
+			Cette classe représente les items qui seront affichés dans la liste contenu dans le menu drawer. Elle est composée de trois attributs qui sont les suivants :
+			\begin{itemize}
+				\item mTitle Le label à afficher dans la liste du menu drawer.
+				\item mIconSource L'icône associée au label à afficher dans la liste du menu drawer.
+				\item mTargetType Le type de page à charger lorsqu'un champs est cliqué dans le menu drawer.
+			\end{itemize}
+	\subsubsection{MenuPage}
+		\paragraph{}
+			Cette page permet de construire le menu overflow (menu accessible depuis la navigation bar de l'application). Ce menu comporte un raccourcis vers la page d'aide.
+
+\subsection{Package SOSTouriste.Services}
+	\paragraph{}
+		Dans le but de réaliser certaines fonctionnalités il est parfois nécessaire de devoir accéder à des fonctions propres au téléphone. Cependant, ces fonctions n'ont pas le même comportement et ne se gèrent pas de la même manière selon le système d'exploitation à savoir Android et IOS. Afin de pouvoir procéder à la réalisation de ces fonctionnalités il faut donc coder en natif les dites fonctionnalités pour chacun des OS. Ainsi, dans le projet commun on défini une interface sous la forme d'un service dont les fonctions seront surchargées dans chacun des projets correspondant à Android et IOS. Dans le projet commun, il suffit d'appeler les fonctions normalement et les bonnes fonctions seront appelées selon le système d'exploitation.
+
+	\subsubsection{IDialer}
+		\paragraph{}
+			Ce service permet de gérer l'utilisation du composeur téléphonique. Sur la page des contacts téléphoniques, un simple clique sur un contact déclenchera un appel à ce service qui ouvrira le composeur téléphonique avec le numéro du contact. Il ne restera plus qu'à déclencher l'appel.
+			
+	\subsubsection{IBaseUrl}
+		\paragraph{}
+			Ce service permet la construction d'URI utile pour la géolocalisation.
+
+\subsection{Package SOSTouriste.Helpers}
+	\subsubsection{Settings}
+		\paragraph{}
+			Cette classe est issue de l'installation d'un package Nuget \emph{Settings Plugin} permettant de gérer l'enregistrement des données/préférences utilisateurs. Les données sont enregistrées sous la forme clé-valeur. Il suffit s'ouvrir la classe \emph{Settings.cs} et d'ajouter les attributs suivants :
+\lstset{style=sharpc}
+\begin{lstlisting}
+private const string KEY = VALEUR KEY;
+private static readonly string DEFAULT = VALEUR DEFAULT;
+\end{lstlisting}
+		Ici, KEY représente la clé de la valeur à sauvegarder et VALEUR KEY sa valeur. Il faut laisser une valeur par défaut où DEFAULT représente la clé de cette valeur et VALEUR DEFAULT sa valeur. Enfin, il ne faut pas oublier d'ajouter les getters et setters correspondant.
+
+\subsection{Package SOSTouriste.Resources}
+	\subsubsection{LanguageResource}
+		\paragraph{}
+			Ce package regroupe l'ensemble des fichiers de ressources pour les langues. Chaque fichier suit la convention de nommage suivante : \emph{LanguageResources.X.resx} où X représente le code ISO de la langue. Ces fichiers contiennent l'ensemble des strings affichées dans l'application. Si une string est ajouté dans un fichier, il faut l'ajouter avec la même clé dans les autres fichiers.
+			
+		\paragraph{}
+			Le fichier de langue afficher par défaut est le suivant \emph{LanguageResources.resx}.

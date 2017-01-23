@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="menuTitle">
+		<value>Menu SOS</value>
+	</data>
+	<data name="title_activity_advice">
+		<value>Advies</value>
+	</data>
+	<data name="title_activity_emergency">
+		<value>Noodgevallen</value>
+	</data>
+	<data name="title_activity_contact">
+		<value>Contacten</value>
+	</data>
+	<data name="title_activity_profile">
+		<value>Profiel</value>
+	</data>
+	<data name="title_activity_localisation">
+		<value>Locatie</value>
+	</data>
+	<data name="title_activity_language">
+		<value>Taal</value>
+	</data>
+	<data name="title_activity_help">
+		<value>Helpen</value>
+	</data>
+	<!-- Urgence -->
+	<data name="samu">
+		<value>Ziekenwagen</value>
+	</data>
+	<data name="hospital">
+		<value>Ziekenhuis</value>
+	</data>
+	<data name="fireman">
+		<value>Brandweer</value>
+	</data>
+	<data name="emergency">
+		<value>Eerste hulp</value>
+	</data>
+	<data name="contact">
+		<value>Contacten</value>
+	</data>
+	<data name="localisation">
+		<value>Lokalisatie</value>
+	</data>
+	<data name="advice">
+		<value>Advies</value>
+	</data>
+	<data name="profile">
+		<value>Profiel</value>
+	</data>
+	<data name="settings">
+		<value>Opties</value>
+	</data>
+	<data name="help">
+		<value>Steun</value>
+	</data>
+	<data name="language">
+		<value>taal</value>
+	</data>
+	<data name="accueil">
+		<value>Ontvangst</value>
+	</data>
+	<data name="callEmergency">
+		<value>Noodgevallen</value>
+	</data>
+	<data name="consulate">
+		<value>Consulaat</value>
+	</data>
+	<data name="policeStation">
+		<value>Politie Hall</value>
+	</data>
+	<data name="locatePolice">
+		<value>Politie</value>
+	</data>
+	<data name="locateConsulate">
+		<value>Consulaat</value>
+	</data>
+	<data name="mapsInstallText">
+		<value> Installeer een applicatie kaarten</value>
+	</data>
+	<data name="problemFile">
+		<value>Probleem met de file!</value>
+	</data>
+	<data name="police">
+		<value>Politie</value>
+	</data>
+	<data name="name">
+		<value>Naam :</value>
+	</data>
+	<data name="firstname">
+		<value>Voornaam :</value>
+	</data>
+	<data name="blood">
+		<value>Bloedgroep :</value>
+	</data>
+	<data name="remarks">
+		<value>Medische informatie:</value>
+	</data>
+	<data name="nameTextView">
+		<value>Voer uw naam in</value>
+	</data>
+	<data name="firstnameTextView">
+		<value>Voer uw voornaam</value>
+	</data>
+	<data name="adviceList">
+		<value>Lijst van de adviezen :</value>
+	</data>
+	<data name="frenchButton">
+		<value>Frans</value>
+	</data>
+	<data name="englishButton">
+		<value>Engelse</value>
+	</data>
+	<data name="germanButton">
+		<value>Duits</value>
+	</data>
+	<data name="spanishButton">
+		<value>Espagnol</value>
+	</data>
+	<data name="helpText">
+		<value>
+			<b>De verschillende activiteiten\n\n</b>
+			<ul>
+				<li>
+					<u>Bel de hulpdiensten\n\n</u>
+				</li>
+                "Deze activiteit is gericht op de ER bellen. Door op deze knop drukt, wordt u "
+                "doorgestuurd naar de telefoon app waarbij je gewoon het nummer dat werd "
+                "gekozen bevestigen.\n\n"
+            <li><u>Contacten\n\n</u></li>
+                "Deze activiteit omvat verschillende telefoonnummers voor andere diensten die u "
+                "nodig heeft, zoals brandweer, politie of de Samu\n\n"
+            <li><u>Lokalisatie\n\n</u></li>
+                "In deze activiteit, door te klikken op de verschillende lijnen, wordt u "
+                "doorgestuurd naar Google Maps met de verschillende voorstellen. "
+                "Vervolgens kiest u uw pad met de route van uw keuze.\n\n"
+            <li><u>Profiel\n\n</u></li>
+                "U kunt uw profiel eindelijk beseffen, voeg uw bloedgroep, de verschillende "
+                "pathologieën en behandeling geschiedenis. "
+                "Dit kan handig zijn als u het slachtoffer van een ongeval zijn.\n\n"
+        </ul>
+		</value>
+	</data>
+	<data name="adviceLabel">
+		<value>Algemene tips|Openbaar vervoer|Hotel|Openbare plaatsen|Parkeren|Beroofd</value>
+	</data>
+	<data name="delete">
+		<value>Verwijderen</value>
+	</data>
+	<data name="queryConsulate">
+		<value>Consulat des Pays-Bas</value>
+	</data>
+	<data name="askLocationText">
+		<value>Om optimaal te genieten van de app, schakelt u geolocatie.</value>
+	</data>
+	<data name="askLocationTitle">
+		<value>Informatie</value>
+	</data>
+	<data name="firstTime">
+		<value>Dit is de eerste keer over de aanvraag, geef dan uw nationaliteit</value>
+	</data>
+</root>

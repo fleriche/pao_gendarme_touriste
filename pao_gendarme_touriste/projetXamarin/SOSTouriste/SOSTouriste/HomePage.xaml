@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+			 xmlns:resx="clr-namespace:SOSTouriste"
+			 x:Class="SOSTouriste.HomePage"
+			 Title="SOS">
+		<ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+		<RelativeLayout VerticalOptions="FillAndExpand">
+			<StackLayout
+				Orientation="Horizontal"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Height, Factor=.05, Constant=0}"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Width, Factor=.1, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Width, Factor=0.8, Constant=0}">
+				<StackLayout
+					Orientation="Vertical"
+					HorizontalOptions="StartAndExpand">
+					<Image
+						x:Name="imgEmergency"
+						Source="emergency.png"
+						HorizontalOptions="StartAndExpand" />
+					<Label
+						Text="{x:Static resx:Resources.LanguageResources.title_activity_emergency}" 
+						FontSize="20"
+						FontAttributes="Bold"
+						XAlign="Center"/>
+				</StackLayout>
+				<StackLayout
+					Orientation="Vertical" 
+					HorizontalOptions="End">
+					<Image
+					x:Name="imgProfile"
+					Source="profile.png"
+					HorizontalOptions="End"/>
+					<Label
+						Text="{x:Static resx:Resources.LanguageResources.title_activity_profile}" 
+						FontSize="20"
+						FontAttributes="Bold"
+						XAlign="Center"/>
+				</StackLayout>
+			</StackLayout>
+			<StackLayout
+				Orientation="Horizontal"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Height, Factor=.35, Constant=0}"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Width, Factor=.1, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Width, Factor=0.8, Constant=0}">
+				<StackLayout
+					Orientation="Vertical"
+					HorizontalOptions="StartAndExpand">
+					<Image
+						x:Name="imgContact"
+						Source="contact.png"
+						HorizontalOptions="StartAndExpand" />
+					<Label
+						Text="{x:Static resx:Resources.LanguageResources.title_activity_contact}"
+						FontSize="20"
+						FontAttributes="Bold"
+						XAlign="Center"/>
+				</StackLayout>
+				<StackLayout
+					Orientation="Vertical" 
+					HorizontalOptions="End">
+					<Image
+					x:Name="imgAdvice"
+					Source="advice.png"
+					HorizontalOptions="End"/>
+					<Label
+						Text="{x:Static resx:Resources.LanguageResources.title_activity_advice}" 
+						FontSize="20"
+						FontAttributes="Bold"
+						XAlign="Center"/>
+				</StackLayout>
+			</StackLayout>
+			<StackLayout	
+				Orientation="Horizontal"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Height, Factor=.65, Constant=0}"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Width, Factor=.1, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+					Property=Width, Factor=0.8, Constant=0}">
+				<StackLayout
+					Orientation="Vertical"
+					HorizontalOptions="CenterAndExpand">
+					<Image
+						x:Name="imgLocation"
+						Source="localisation.png"
+						HorizontalOptions="Center" />
+					<Label
+						Text="{x:Static resx:Resources.LanguageResources.title_activity_localisation}" 
+						FontSize="20"
+						FontAttributes="Bold"
+						XAlign="Center"/>
+				</StackLayout>
+			</StackLayout>
+		</RelativeLayout>
+		</ScrollView>
+</ContentPage>

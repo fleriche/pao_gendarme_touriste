@@ -1,0 +1,19 @@
+projetXamarin/rapport/*.aux
+projetXamarin/rapport/*.out
+projetXamarin/rapport/*.log
+projetXamarin/rapport/*.run.xml
+projetXamarin/rapport/*.synctex.gz
+projetXamarin/rapport/*.toc
+projetXamarin/rapport/sosTouriste-blx.bib
+projetXamarin/rapport/sosTouriste.pdf
+projetXamarin/rapport/*.tex~
+projet/rapport/*.aux
+projet/rapport/*.out
+projet/rapport/*.log
+projet/rapport/*.run.xml
+projet/rapport/*.synctex.gz
+projet/rapport/*.toc
+projet/rapport/Rapport Application SOS.pdf
+projet/rapport/includes/*.tex~
+
+

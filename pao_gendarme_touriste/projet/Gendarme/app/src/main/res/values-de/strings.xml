@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="title">Mon Application</string>
+    <string name="menuTitle">Menü SOS</string>
+
+    <string name="title_activity_advice">Beratung</string>
+    <string name="title_activity_emergency">Dringlichkeit</string>
+    <string name="title_activity_contact">Kontact</string>
+    <string name="title_activity_profile">Profil</string>
+    <string name="title_activity_localisation">Geolokalisierung</string>
+    <string name="title_activity_language">Sprache</string>
+    <string name="title_activity_help">Hilfe</string>
+
+
+    <!-- Urgence -->
+    <string name="samu">Samu</string>
+    <string name="hospital">Krankenhaus</string>
+    <string name="fireman">Feuerwehr</string>
+    <string name="emergency">Dringlichkeit</string>
+
+    <string name="contact">Kontact</string>
+    <string name="localisation">Geolokalisierung</string>
+    <string name="advice">Beratung</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Options</string>
+    <string name="help">Hilfe</string>
+    <string name="language">Sprache</string>
+    <string name="accueil">Willkommen</string>
+    <string name="callEmergency">Dringlichkeit</string>
+
+    <string name="consulate">Konsulat</string>
+    <string name="policeStation">Polizeistation</string>
+    <string name="locatePolice">Polizei</string>
+    <string name="locateConsulate">Konsulat</string>
+    <string name="mapsInstallText">Bitte installieren Sie eine Geolokalisierungsanwendung</string>
+    <string name="problemFile">Problem mit der Datei!</string>
+    <string name="police">Polizei</string>
+
+    <string name="name">Name : </string>
+    <string name="firstname">Vorname : </string>
+    <string name="blood">Blutgruppe : </string>
+    <string name="remarks">Medizinische Bemerkungen :</string>
+
+    <string name="nameTextView">Bitte geben Sie Ihre Name ein</string>
+    <string name="firstnameTextView">Bitte geben Sie Ihre Vorname ein</string>
+
+    <string name="adviceList">Liste von Räten</string>
+
+    <string name="frenchButton">Französische</string>
+    <string name="englishButton">Englisch</string>
+    <string name="germanButton">Deutsch</string>
+    <string name="spanishButton">Spanisch</string>
+
+
+    <string name="helpText">
+        <b>Die verschiedenen Aktivitäten\n\n</b>
+        <ul>
+            <li> <u>Die Dringlichkeiten rufen\n\n</u></li>
+                "Diese Tätigkeit hat zum Ziel, die Dringlichkeiten zu rufen. Auf diesen Knopf"
+                "drückend(unterstützend), werden Sie zu Ihrer Anwendung von Telefon wieder geleitet"
+                "sein, wo Sie nur die Nummer werden rechtswirksam zu machen haben, die"
+                "zusammengestellt gewesen ist.\n\n"
+            <li> <u>Kontakt\n\n</u></li>
+                "Diese Tätigkeit vereint unterschiedliche Rufnummern der anderen Dienste, die Sie"
+                "brauchen könnten, so wie die Feuerwehrmänner, die Polizei(Police) oder noch der"
+                "samu.\n\n"
+            <li> <u>Geolokalisierung\n\n</u></li>
+                "In dieser Tätigkeit, auf den unterschiedlichen Linien klickend, werden Sie auf"
+                "Google Maps mit den unterschiedlichen Vorschlägen wieder geleitet sein. Dann,"
+                "Ihnen, Ihren Weg mit der Reiseroute Ihrer Auswahl zu wählen.\n\n"
+            <li> <u>Profil\n\n</u></li>
+                "Sie werden schliesslich Ihr Profil realisieren, Ihre Blutgruppe, die"
+                "unterschiedlichen Pathologien und die regelmäßigen Behandlungen hinzufügen können."
+                "Das wird nützlich sein können, wenn Sie ein Opfer eines Unfalles sind.\n\n"
+        </ul>
+    </string>
+
+    <string name="delete">Löschen</string>
+    <string name="queryConsulate">Consulat d\'Allemagne</string>
+    <string name="askLocationText">Um voll und ganz die App genießen, aktivieren Sie bitte die Entfernung zu kennen.</string>
+    <string name="askLocationTitle">Informationen</string>
+
+    <string-array name="adviceLabel">
+        <item>Allgemeine Tipps</item>
+        <item>Öffentliche Verkehrsmittel</item>
+        <item>Hotel</item>
+        <item>Öffentlichen Plätzen</item>
+        <item>Parkplatz</item>
+        <item>Opfer eines Diebes</item>
+    </string-array>
+    <string name="firstTime">Dies ist das erste Mal auf der Anwendung, geben Sie bitte Ihre Nationalität</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="title">Mon Application</string>
+    <string name="menuTitle">Menù SOS</string>
+
+    <string name="title_activity_advice">Consigli</string>
+    <string name="title_activity_emergency">Emergenze</string>
+    <string name="title_activity_contact">Contatto</string>
+    <string name="title_activity_profile">Profilo</string>
+    <string name="title_activity_localisation">Localizzazion</string>
+    <string name="title_activity_language">Linguaggio</string>
+    <string name="title_activity_help">Aiuto</string>
+
+
+    <!-- Urgence -->
+    <string name="samu">Ambulanza</string>
+    <string name="hospital">Ospedale</string>
+    <string name="fireman">Pompieri</string>
+    <string name="emergency">Urgenze</string>
+
+    <string name="contact">Contatto</string>
+    <string name="localisation">Localizzazion</string>
+    <string name="advice">Consigli</string>
+    <string name="profile">Profilo</string>
+    <string name="settings">Opzioni</string>
+    <string name="help">Aiuto</string>
+    <string name="language">Lingua</string>
+    <string name="accueil">Accoglienza</string>
+    <string name="callEmergency">Emergenze</string>
+
+    <string name="consulate">Consolato</string>
+    <string name="policeStation">Hotel di polizia</string>
+    <string name="locatePolice">Polizia</string>
+    <string name="locateConsulate">Consolato</string>
+    <string name="mapsInstallText">Volete installare un\'applicazione di carte</string>
+    <string name="problemFile">Problema con lo schedario !</string>
+    <string name="police">Polizia</string>
+
+    <string name="name">Nome :</string>
+    <string name="firstname">Cognome :</string>
+    <string name="blood">Gruppo sanguigno :</string>
+    <string name="remarks">Osservazioni medicine :</string>
+
+    <string name="nameTextView">Inserire il vostro nome</string>
+    <string name="firstnameTextView">Inserire il vostro cognome</string>
+
+    <string name="adviceList">Elenco dei consigli :</string>
+
+    <string name="frenchButton">Francesi</string>
+    <string name="englishButton">Inglese</string>
+    <string name="germanButton">Germania</string>
+    <string name="spanishButton">Spagnolo</string>
+
+
+    <string name="helpText">
+        <b>Le varie attività\n\n</b>
+        <ul>
+            <li> <u>Chiamare l\'emergenza\n\n</u></li>
+                "Questa attività ha lo scopo di chiamare il pronto soccorso. Premendo questo "
+                "pulsante, si verrà reindirizzati al vostro telefono app in cui devi solo "
+                "confermare il numero composto.\n\n"
+            <li> <u>Contatti\n\n</u></li>
+                "Questa attività comprende diversi numeri di telefono per gli altri servizi "
+                "necessari, come ad esempio il fuoco, polizia o il Samu\n\n"
+            <li> <u>Localizzazione\n\n</u></li>
+                "In questa attività, facendo clic sulle diverse linee, si verrà reindirizzati a "
+                "Google Maps con le diverse proposte."
+                "Quindi, scegliere il vostro percorso con il percorso di vostra scelta.\n\n"
+            <li> <u>Profilo\n\n</u></li>
+                "Si può finalmente realizzare il proprio profilo, aggiungere il gruppo sanguigno, "
+                "le diverse patologie e trattamenti storia. Questo può essere utile se si è "
+                "vittima di un incidente.\n\n"
+        </ul>
+    </string>
+
+    <string name="delete">Sopprimere</string>
+    <string name="queryConsulate">Consulat d\'Italie</string>
+    <string name="askLocationText">Per godere appieno l\'applicazione, si prega di abilitare geolocalizzazione.</string>
+    <string name="askLocationTitle">Informazioni</string>
+
+    <string-array name="adviceLabel">
+        <item>Consigli generali</item>
+        <item>Trasporti pubblici</item>
+        <item>Hotel</item>
+        <item>Luoghi pubblici</item>
+        <item>Parcheggio</item>
+        <item>Vittima di un furto</item>
+    </string-array>
+
+    <string name="firstTime">Questa è la prima volta l\'applicazione, si prega di fornire la vostra nazionalità</string>
+</resources>

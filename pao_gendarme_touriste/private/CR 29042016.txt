@@ -1,0 +1,23 @@
+OK	écran petit, icones trop grande
+OK	plutot que la langue -> la nationalité  (exemple australien et anglais pas le meme consulat ) 
+OK	activité langue liste plutot que drapeaux
+OK	Au premier lancement, choisir la nationalité en fonction de la langue du téléphone.
+~~	25$ pour un compte developper android (déploiement ?)
+~~	disponible en 4.3 jelly bean (voir la compatibilité avec l'actuel)
+
+OK 	aide : pictogramme avec la situation et au clic on affiche les indications
+	~ clipart
+OK	diviser le fichier d'aide en plusieurs avec plusieurs images associés
+OK	advice1, advice2....
+
+OK 	(pas besoin API lvl 1)	chrome lire ficheir html dans l'application ( a tester )
+OK	-----localisation, si la géolocalisation est off, le proposer---------
+OK   	contact 	-> "police ou gendarmerie"
+OK   	localisation -> "police ou gendarmerie"
+OK   	localisation -> query "gendarmerie, police"
+
+OK	à l'installation + lancement, forcer la géolocalisation
+OK	(rajouter permissions localisation)
+
+OK	localisation mettre les captions en francais
+
